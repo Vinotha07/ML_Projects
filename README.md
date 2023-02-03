@@ -113,3 +113,13 @@ TO STOP IMAGE WE CAN USE
 .........
 docker stop <container id>
 id get it from above
+docker installation  is optional
+
+create .github folder inside that create workflow and then create a file main.yaml
+write code to trigger by writing git hub comments to push the docker image to heroku for continous deployment
+in main.yaml we need to pass the heroku email id, api key and the app name in the secrets. so that we can continous deployment.
+in git hub go to setting and click on secrets at the left side and select actions then click on New repository secret give name "HEROKU_EMAIL" give your heroku email id in the Value and add secret then heroku email secret got created
+again give new scret then give name as "HEROKU_API_KEY" and enter the key in the Value
+again create new secret and give"HEROKU_APP_NAME" and enter the app  name in the value and add secret
+then go to action tab and go to workflow folder and select main.yaml and rerun in the git hub.
+if we again change anything in the code after push the code then go to action tab and click on the build in the github it will automatically deploy the changes . 
