@@ -4,6 +4,7 @@ Software and account Requirements
 [Heroku Account](https://dashboard.heroku.com/login)
 [VS CODE IDE]
 [GIT CLI]
+[GIT DOCS](https://git-scm.com/docs/gittutorial)
 after cloning git hub 
 
 
@@ -70,6 +71,7 @@ git push origin main
 ..........
 
 to check remote url(gives git link where these files stored)
+
 .........
 git remote -v
 ............
@@ -78,3 +80,36 @@ to get branch name
 .........
 git branch
 ..........
+To setup CI/CD pipeline in heroku we need 3 info
+1. Heroku_Email=
+2. Heroku_API_KEY=
+3.HEROKU APP_NAME=
+
+create Docker file
+dockerignore
+
+Build Docker Image
+..........
+docker build -t <image_name>:<tagname>.
+
+docker build -t ml-project:latest.
+
+Note:IMAGE NAME FOR DOCKER MUST BE LOWERCASE
+
+To list docker image
+........
+docker images
+......
+Run docker image
+..........
+docker run -p 5000:5000 -e PORT=5000 <IMAGE ID WHICH WE GOT FROM ABOVE SCRIPT>
+
+to check running container in docker
+``````
+docker ps
+`````````
+
+TO STOP IMAGE WE CAN USE
+.........
+docker stop <container id>
+id get it from above
