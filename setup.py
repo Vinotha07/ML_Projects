@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 from typing import List
 
 
@@ -9,7 +9,6 @@ PROJECT_NAME="Housing-Predictor"
 VERSION="0.0.1"
 AUTHOR="Vinotha "
 DESCRIPTION="This is the first FSDS ML Project"
-PACKAGES=["housing"]
 REQUIREMENT_FILE_NAME="requirements.txt"
 
 
@@ -22,7 +21,7 @@ def get_requirements_list() ->List[str]:
     requirements.tx file
     """
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
-        return requirement_file.readlines()
+        return requirement_file.readlines().remove("-e .")
 
   
 
@@ -32,7 +31,7 @@ name=PROJECT_NAME,
 version=VERSION,
 author=AUTHOR,
 description=DESCRIPTION,
-packages=PACKAGES,
+packages=find_packages(),
 install_requires=get_requirements_list()
 )
 

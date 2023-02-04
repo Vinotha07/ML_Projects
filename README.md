@@ -133,3 +133,20 @@ in setup file give the packages as a list since it has the folder name used in t
 ..........
 python setup.py install
 ..................
+above command install all the modules in the requirement.txt and create some folders like
+Housing_Predictor.egg
+build
+dist 
+folders by default
+
+.............
+pip install -e .
+............
+above command helps to install the available pkgs
+
+find package() in setup file automatically find the __init__.py file and return the folder in which it has
+
+folder name - package
+file name- module
+for -e. the setup.py is mandatory. to update the version of the pjt
+egg pkg has our custom package information
