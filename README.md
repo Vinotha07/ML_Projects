@@ -123,3 +123,13 @@ again give new scret then give name as "HEROKU_API_KEY" and enter the key in the
 again create new secret and give"HEROKU_APP_NAME" and enter the app  name in the value and add secret
 then go to action tab and go to workflow folder and select main.yaml and rerun in the git hub.
 if we again change anything in the code after push the code then go to action tab and click on the build in the github it will automatically deploy the changes . 
+
+
+create the folder housing folder.this is the root folder where we can write all our code.
+create setup.py file .....its like requirement txt file
+create __init__.py under housing. like create the library as the housing
+in setup file give the packages as a list since it has the folder name used in the pjt
+
+..........
+python setup.py install
+..................
