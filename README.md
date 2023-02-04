@@ -150,3 +150,24 @@ folder name - package
 file name- module
 for -e. the setup.py is mandatory. to update the version of the pjt
 egg pkg has our custom package information
+
+create folder structure and every folder should have __init__.py file
+..................
+config
+exception
+logger
+component
+entity
+pipeline
+..................
+
+1st we have to work on logger and exception at root level
+while we write code we need logger to see what happening and exception give how u can handle the error
+
+once u create logger file, create the logging config and test if it is working by adding logging command to the app.py
+then run pip install-r req.txt and python app.py
+
+
+cntrl+c for stop running
+
+to write custom exception class by inherit python exception class
