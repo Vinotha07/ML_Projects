@@ -171,3 +171,15 @@ then run pip install-r req.txt and python app.py
 cntrl+c for stop running
 
 to write custom exception class by inherit python exception class
+
+we are customizing the exception which is needed to find in which line error is occured and its type
+
+entity-real world object, its like table, we have to identify the entity
+for example in college admission system the entities are
+student
+class room
+subject
+department
+exam
+the attribute of the student is roll no, dob,name
+methods of student are attendance, results
