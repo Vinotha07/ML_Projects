@@ -183,3 +183,14 @@ department
 exam
 the attribute of the student is roll no, dob,name
 methods of student are attendance, results
+
+
+create files in the component
+then create pipeline.py files in the pipeline folder
+
+start to create config_entity file under entity pkg
+
+create notebook file and install for jupyter notebook and choose our env at the top right corner. example folder is not the part of the pjt
+..........
+pip install ipykernel
+................
