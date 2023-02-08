@@ -194,3 +194,13 @@ create notebook file and install for jupyter notebook and choose our env at the 
 ..........
 pip install ipykernel
 ................
+
+create config folder outside and that should have the yaml file which should have all the details of the configuration which will be read by the entity config
+
+
+...........
+pip install PyYAML
+
+helper function will be write in util folder
+
+we can decalre all the constant in the constant folder that is hardcoded
