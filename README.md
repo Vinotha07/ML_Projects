@@ -204,3 +204,5 @@ pip install PyYAML
 helper function will be write in util folder
 
 we can decalre all the constant in the constant folder that is hardcoded
+
+artifact entity is for the output file 
